@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enquiry Form</title>
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;">
+<style>
+        .container {
+            width:500px;
+            height:500px;
+            margin-top:4%;
+            margin-left:30%;
+            padding:10px;
+            border-style:ridge;
+            /* background-color: white; */
+            }
+
+        .container input[type="text"],
+        .container textarea {
+            width:100%;
+            padding:10px;
+            margin-bottom: 10px;
+            border:1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .container textarea {
+            height:70px;
+        }
+
+        .button
+         {
+            background-color:forestgreen;
+            color: white;
+            margin-top:10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width:100px;
+
+        }
+
+        
+        th{
+            width:20%;
+        }
+        td{
+            width:75%;
+        }
+        a:link{
+    color:Gold;
+    text-decoration:none;
+}
+a:visited{
+    color:gold;
+    text-decoration: none;
+    
+}
+        
+    </style>
+    
+</head>
+<body style="background-image:url('bluebackground.jpg');">
+    <div class="container">
+        <h1 style="font-size:25px;margin-top:1px;">Write Us:</h2>
+            
+        <form action="#" method="post">
+            <table width="100%">
+                <tr>
+                    <th>
+                        
+            <label for="name">Your Name:</label>
+            </th>
+            <td>
+            <input type="text" id="name" name="name" required>
+            </td>
+            </tr>
+            <tr>
+                <th>
+            
+            <label for="email">Email:</label>
+            </th>
+            <td>
+            <input type="text" id="email" name="email" required>
+            </td></tr>
+            <tr>
+                <th>
+
+            <label for="mobile">Mobile No.:</label>
+            </th>
+            <td>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required>
+            </td></tr>
+            <tr>
+                <th>
+
+
+            <label for="message">Write Your Query:</label>
+            </th>
+            <td>
+            <textarea id="message" name="message" required></textarea>
+            </td>
+            </tr>
+            <tr>
+                <th>
+
+            <label for="contact">Prefered Contact:</label></th>
+            <td>
+            <input type="radio" id="contact" name="contact">
+            <label for="mobile">Mobile No.</label>
+            <input type="radio" id="contact" name="contact">
+            <label for="email">Email</label>
+            </td>
+            </tr>
+            </table>
+            
+            
+            <a style="color:white" href="index.html"><button class="button">Back </a></button>
+            <button class="button" type="reset">Reset</button>
+            <a style="color:white" href="submit.html"><button class="button">Submit </a></button>
+            
+            
+          
+                
+            
+            
+ 
+          
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Form</title>
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;">
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-style:groove;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container select,
+        .container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .container textarea {
+            height:50px;
+        }
+
+        /* .container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        } */
+
+        .container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .required::after {
+        content: ' *';
+        color: red;
+      }
+      .button
+         {
+            background-color:forestgreen;
+            color: white;
+            margin-top:10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width:100px;
+         }
+         a:link{
+    color:Gold;
+    text-decoration:none;
+}
+a:visited{
+    color:gold;
+    text-decoration: none;
+    
+}
+    </style>
+</head>
+<body style="background-image:url('bluebackground.jpg');">
+    <div class="container">
+        <h1 style="font-size:25px;margin-top:1px;">Reservation Form:</h2>
+        <form action="#" method="post">
+            <label class="required" for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label class="required" for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" maxlength="10" required>
+            <br>
+            <br>
+
+            <label class="required" for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required><br>
+
+            <label class="required" for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required><br><br>
+
+            <label class="required" for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="">Select Room Type</option>
+                <option value="Classic">Classic Room</option>
+                <option value="Superior">Superior Room</option>
+                <option value="Delux">Delux Room</option>
+                <option value="Executive">Executive Suite</option>
+                <option value="Viceroy">Viceroy Suite</option>
+
+            </select>
+           
+            <br>
+            <label  for="verify">Identity Card</label>
+            <select id="verify" name="verify" required>
+                <option value="">Select Identify Type</option>
+                <option value="Aadhar">Aadhar Card</option>
+                <option value="Driving">Driving Licence</option>
+                <option value="Voter">Voter Card</option>
+                <option value="PAN">PAN Card</option>
+                <option value="Passport">Passport</option>
+
+            </select>
+            <label  for="IdentityCard">Identity Card No.:</label>
+            <input type="text" id="IdentityCard" name="IdentityCard" required><br>
+
+            <label class="required" for="paymentmethod" >Payment Method</label><br>
+            
+            <input type="radio" id="paymentmethod" name="paymentmethod">
+            <label for="paymentmethod">At the time of checking In</label><br>
+            <input type="radio" id="paymentmethod" name="paymentmethod">
+            <label for="paymentmethod">Online</label><br>
+
+            <label for="message">Additional Requests:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <a style="color:white" href="index.html"><button class="button">Back</a></button>
+
+            <button class="button" type="reset">Reset</button>
+            <a style="color:white" href="reservation.html"><button class="button">Confirm</a></button>
+            <!-- <input type="submit" value="Book Now"> -->
+        </form>
+    </div>
+</body>
+</html>
